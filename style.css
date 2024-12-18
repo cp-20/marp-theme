@@ -58,6 +58,8 @@ li::marker {
 /* 画面を埋める画像 */
 img.cover-image {
   object-fit: cover;
+  width: 100%;
+  height: 100%;
   position: absolute;
   inset: 0;
   z-index: -1;
