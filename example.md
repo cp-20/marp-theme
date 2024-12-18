@@ -54,3 +54,13 @@ _class: cover-image
   - <span class="dotted">ドットで強調</span>
   - <span class="blue-lined">水色マーカー</span>
   - <span class="orange-lined">オレンジマーカー</span>
+
+---
+
+<!--
+_class: end
+-->
+
+# おわり
+
+<p class="gray center">なんかコメントがあれば書く</p>

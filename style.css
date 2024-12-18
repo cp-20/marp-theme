@@ -22,7 +22,7 @@ section {
   position: relative;
 }
 
-section:not(.no-caption, .cover-image)::before {
+section:not(.no-caption, .cover-image, .end)::before {
   content: '';
   display: block;
   position: absolute;
@@ -33,11 +33,11 @@ section:not(.no-caption, .cover-image)::before {
   background-image: url('https://trap.jp/assets/logo/full_blue.svg');
 }
 
-section:not(.title, .section-head) {
+section:not(.title, .section-head, .end) {
   padding: 128px 72px 72px;
 }
 
-section:not(.title, .section-head) h1 {
+section:not(.title, .section-head, .end) h1 {
   color: var(--primary);
   position: absolute;
   top: 32px;
@@ -126,6 +126,14 @@ section.cover-image img {
   font-size: 50%;
   border-top: solid 1px #7f7f7f;
   padding-top: 10px;
+}
+
+/* 最後のスライド */
+
+section.end h1 {
+  font-size: 4rem;
+  color: var(--primary);
+  text-align: center;
 }
 
 /* レイアウト */
