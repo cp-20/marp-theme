@@ -35,7 +35,7 @@ _class: section-head
 ---
 
 <!--
-_class: no-caption
+_class: cover-image
 -->
 
 <img class="cover-image" src="https://picsum.photos/seed/picsum/1920/1080" alt="lorem ipsum">

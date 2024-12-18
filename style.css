@@ -22,7 +22,7 @@ section {
   position: relative;
 }
 
-section:not(.no-caption)::before {
+section:not(.no-caption, .cover-image)::before {
   content: '';
   display: block;
   position: absolute;
@@ -33,12 +33,17 @@ section:not(.no-caption)::before {
   background-image: url('https://trap.jp/assets/logo/full_blue.svg');
 }
 
-h1 {
-  color: var(--black);
+section:not(.title, .section-head) h1 {
+  color: var(--primary);
+  position: absolute;
+  top: 32px;
+  left: 48px;
+  border-bottom: 8px dotted var(--primary);
   margin: 0;
   padding: 0;
   font-size: 2rem;
   margin-bottom: 1rem;
+  padding: 2px 8px;
 }
 
 p {
@@ -53,16 +58,6 @@ ul {
 
 li::marker {
   color: var(--primary);
-}
-
-/* 画面を埋める画像 */
-img.cover-image {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  inset: 0;
-  z-index: -1;
 }
 
 /* タイトルスライド */
@@ -88,6 +83,21 @@ section.section-head h1 {
   color: var(--primary);
   border-left: 16px solid var(--primary);
   padding: 24px 0 24px 16px;
+}
+
+/* 画像が背景のスライド */
+
+section.cover-image {
+  padding: 0;
+}
+
+section.cover-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
 }
 
 /* 汎用コンポーネント */
