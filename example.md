@@ -34,9 +34,13 @@ _class: section-head
 
 ---
 
-# 画像も入れられる
+<!--
+_class: no-caption
+-->
 
-![alt text](https://picsum.photos/seed/picsum/900/600)
+<img class="cover-image" src="https://picsum.photos/seed/picsum/1920/1080" alt="lorem ipsum">
+
+# でっかい画像
 
 ---
 

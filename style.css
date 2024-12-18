@@ -55,6 +55,14 @@ li::marker {
   color: var(--primary);
 }
 
+/* 画面を埋める画像 */
+img.cover-image {
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
 /* タイトルスライド */
 
 section.title {
