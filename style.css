@@ -22,7 +22,7 @@ section {
   position: relative;
 }
 
-section::before {
+section:not(.no-caption)::before {
   content: '';
   display: block;
   position: absolute;
