@@ -60,6 +60,12 @@ li::marker {
   color: var(--primary);
 }
 
+a {
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 /* タイトルスライド */
 
 section.title {
