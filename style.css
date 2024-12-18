@@ -33,6 +33,10 @@ section:not(.no-caption, .cover-image)::before {
   background-image: url('https://trap.jp/assets/logo/full_blue.svg');
 }
 
+section:not(.title, .section-head) {
+  padding: 128px 72px 72px;
+}
+
 section:not(.title, .section-head) h1 {
   color: var(--primary);
   position: absolute;
