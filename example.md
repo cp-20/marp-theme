@@ -58,6 +58,16 @@ _class: cover-image
 ---
 
 <!--
+_class: emphasize
+-->
+
+# 強調したい内容
+
+## 補足的な内容
+
+---
+
+<!--
 _class: end
 -->
 

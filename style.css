@@ -37,7 +37,7 @@ section:not(.title, .section-head, .end) {
   padding: 128px 72px 72px;
 }
 
-section:not(.title, .section-head, .end) h1 {
+section:not(.title, .section-head, .emphasize, .end) h1 {
   color: var(--primary);
   position: absolute;
   top: 32px;
@@ -110,6 +110,19 @@ section.cover-image img {
   z-index: -1;
 }
 
+/* 文字がデカデカと出るスライド */
+section.emphasize h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+section.emphasize h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 /* 汎用コンポーネント */
 
 .box {
@@ -147,6 +160,47 @@ section.end h1 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   align-items: center;
+}
+
+.columns-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: center;
+}
+
+.columns-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: center;
+}
+
+.columns-6 {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: center;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-3 {
+  grid-column: span 3;
+}
+
+.span-4 {
+  grid-column: span 4;
+}
+
+.span-5 {
+  grid-column: span 5;
+}
+
+.span-6 {
+  grid-column: span 6;
 }
 
 /* 装飾用 */
