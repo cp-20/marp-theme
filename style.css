@@ -208,21 +208,18 @@ section.end h1 {
 .red {
   color: #ff0000;
   font-weight: bold;
-  display: inline-block;
   white-space: nowrap;
 }
 
 .green {
   color: #61bb61;
   font-weight: bold;
-  display: inline-block;
   white-space: nowrap;
 }
 
 .gray {
   color: #808080a5;
   font-weight: bold;
-  display: inline-block;
   white-space: nowrap;
 }
 
